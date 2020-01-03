@@ -1,0 +1,2 @@
+<button id="simulation_button" type="button" class="btn btn-info">Start Simulation</button>
+<div id="tweets"></div>

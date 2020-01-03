@@ -1,0 +1,45 @@
+<div class="leftone">
+
+<div class='col-md-3'>
+<input id="username" type="text" placeholder="enter username to register" class="form-control" style="display:inline"></input>
+<button id="username_button" type="button" class="btn btn-info">user register</button>
+<button id="login_button" type="button" class="btn btn-info">LOGIN</button>
+<button id="logout_button" type="button" class="btn btn-info">LOGOUT</button>
+</div>
+
+
+<div class='col-md-3'>
+<input id="subscribe" type="text" placeholder="enter subscriber id"  class="form-control"></input>
+<button id="subscribe_button" type="button" class="btn btn-info">click to subscribe to a user</button>
+</div>
+
+<div class='col-md-3'>
+<input id="sendtweet" type="text" placeholder="tweet" class="form-control"></input>
+<button id="sendtweet_button" type="button" class="btn btn-info">click to send tweets</button>
+</div>
+
+<div class='col-md-3'>
+<input id="search_hashtag" type="text" placeholder="enter hashtag"  class="form-control"></input>
+<button id="search_hashtag_button" type="button" class="btn btn-info">click to get tweets with hashtag</button>
+</div>
+<br>
+</br>
+<button id="search_mentions" type="button"  class="btn btn-info">click to get your mentions</button>
+<br></br>
+<button id="search_user_tweets" type="button" class="btn btn-info">click to get your tweets</button>
+<!--button id="clear_screen" type="button"  class="btn btn-info">clear screen</button-->
+</div>
+<div class="rightone" id="messages"></div>
+
+<style type="text/css">
+.leftone {
+    width:200px;
+    display:block;
+    float: left;
+}
+.rightone {
+    width:400px;
+    display:block;
+    float: right;
+}
+</style>

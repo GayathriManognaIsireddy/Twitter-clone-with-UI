@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TwitterClone</title>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+  </head>
+  <body>
+   <header class="header">
+      <h1 style="font-size:100px; font-family: 'Brush Script MT';" align='center' color='blue'> TWITTER CLONE </h1>
+        <nav role="navigation">
+          <!--<ul class="nav nav-pills pull-right">-->
+        <img src="https://cdn.worldvectorlogo.com/logos/twitter.svg" alt="Twitter" width="150" height="100">
+        
+
+          </ul>
+        </nav>
+        <span class="logo"></span>
+      </header>
+    <main role="main" class="container">
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>
